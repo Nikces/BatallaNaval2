@@ -1,6 +1,6 @@
 
 /**
- * Created by trox on 27/09/16.
+ * Created by Maurich on 27/09/16.
  */
 public class Barco {
 

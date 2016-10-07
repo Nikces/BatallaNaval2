@@ -2,7 +2,7 @@
 import java.util.*;
 
 /**
- * Created by trox on 29/09/16.
+ * Created by Maurich on 29/09/16.
  */
 public class Tablero {
 
@@ -43,7 +43,7 @@ public class Tablero {
     }
 
     public Barco crearBarcos(boolean estado, String cordenada){
-        //for (int i=0;i<cantidadDeBarcos;i++) {
+
         return   new Barco(estado, cordenada);
 
     }
@@ -234,19 +234,19 @@ public class Tablero {
         if (ide==2){salida=" x ";
         }//fin if else
 
-        System.out.println("\t\t\t\t\t\t\t\t  >>TABLERO JUGADOR: "+ide+"<<");   //
-        System.out.println("\t\t\t\t\t\t\t\tA  B  C  D  E  F  G  H  I ");    //
-        for (int i = 1; i < 10; i++) {                                         //  *Imprimo por pantalla las lineas
-            if (i < 10) System.out.print("\t\t\t\t\t\t\t " + i + " ");          //  del tablero.
-                //
-            else System.out.print("\t\t\t\t\t\t\t"+i + " ");                    //
-            //
-            for (int j = 1; j < 10; j++) {                                     //
-                //
-                if (esToken(i, j, arreglo)) {                                   //<<linea en donde se verifica e
+        System.out.println("\t\t\t\t\t\t\t\t  >>TABLERO JUGADOR: "+ide+"<<");    //
+        System.out.println("\t\t\t\t\t\t\t\tA  B  C  D  E  F  G  H  I ");        //
+        for (int i = 1; i < 10; i++) {                                           //  *Imprimo por pantalla las lineas
+            if (i < 10) System.out.print("\t\t\t\t\t\t\t " + i + " ");           //  del tablero.
+                                                                                 //
+            else System.out.print("\t\t\t\t\t\t\t"+i + " ");                     //
+                                                                                 //
+            for (int j = 1; j < 10; j++) {                                       //
+                                                                                 //
+                if (esToken(i, j, arreglo)) {                                    //<<linea en donde se verifica e
                     System.out.print(salida);                                    //  imprime un barco " [#] "
-                } else                                                          //     o
-                    System.out.print(" : ");                                    //  " : "
+                } else                                                           //     o
+                    System.out.print(" : ");                                     //  " : "
             }//Fin for int j
             System.out.println();
         }//Fin for int i

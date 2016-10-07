@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 /**
- * Created by trox on 5/10/16.
+ * Created by Maurich on 5/10/16.
  */
 public class Main {
     static Scanner sc=new Scanner(System.in);

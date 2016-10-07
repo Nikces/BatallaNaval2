@@ -1,6 +1,6 @@
 
 /**
- * Created by trox on 5/10/16.
+ * Created by Maurich on 5/10/16.
  */
 public class Jugador extends Tablero {
 
@@ -19,15 +19,14 @@ public class Jugador extends Tablero {
         this.contadorDeAciertos += contadorDeAciertos;
     }
     public void cargarLista(){
-        // Tablero tablero1=new Tablero();
-        // int barcos=2;
+
         String s="";
 
         for (int i=0;i<getCantidadDeBarcos();i++) {
 
             Boolean valido = false;
 
-            // String s="";
+
             while (!valido) {//Verifico la cordena ingresada.
                 s=ingresarBarco(1);
                 valido = validarEntrada(s);//Verifica la sintaxis que sea del tipo: A1B2.
@@ -39,9 +38,6 @@ public class Jugador extends Tablero {
             }//Fin WHILE
             setListaBarcoJugadorUno(crearBarcos(valido,s));
 
-
-            // System.out.println(tablero1.crearBarcos(valido,s));
-            //System.out.println(tablero1.getListaBarcoJugadorUno());
 
         }//Fin del FOR
     }
